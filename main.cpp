@@ -13,7 +13,7 @@ int main () {
         cout << "4. Balance Enquiry\n";
         cout << "5. Display All Accounts\n";
         cout << "6. Exit\n";
-        cout<<"Enter your Choice: ";
+        cout<<"Enter your Choice (1-6): ";
         cin>>choice;
 
         switch (choice)
