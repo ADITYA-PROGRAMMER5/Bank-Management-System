@@ -2,7 +2,11 @@
 using namespace std;
 
 class Account {
-
+    private:
+    int accountNumber;
+    string holderName;
+    char accountType;
+    double balance;
 };
 
 int main () {
