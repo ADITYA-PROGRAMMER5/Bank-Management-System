@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Account {
@@ -9,7 +10,18 @@ class Account {
     double balance;
 
     public:
-    
+    void createNewAccount() {
+        cout<<"Enter Account Number: ";
+        cin>>accountNumber;
+        cin.ignore();
+        cout<<"Enter Account Holder Name: ";
+        getline(cin, holderName);
+        cout<<"Enter Account Type ('S' = Saving, 'C' = Current): ";
+        cin>>accountType;
+        cout<<"Enter Holder Balance: ";
+        cin>>balance;
+        cout<<"\n\nNew Account Created Successfully\n\n";
+    }
 };
 
 int main () {
