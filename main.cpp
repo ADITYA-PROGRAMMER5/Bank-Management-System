@@ -7,6 +7,9 @@ class Account {
     string holderName;
     char accountType;
     double balance;
+
+    public:
+    
 };
 
 int main () {
