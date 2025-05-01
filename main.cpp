@@ -39,11 +39,11 @@ int main () {
             break;
 
         case 6:
-            cout<<"Thank You for using Bank Managemnt System";
+            cout<<"Thank You for using Bank Managemnt System\n\n";
             break;
         
         default:
-            cout<<"Invalid Choice! PLease Try Again";
+            cout<<"Invalid Choice! PLease Try Again\n";
         }
     } while (choice != 6);
     
