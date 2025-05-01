@@ -22,6 +22,11 @@ class Account {
         cin>>balance;
         cout<<"\n\nNew Account Created Successfully\n\n";
     }
+
+    void deposit(double amount) {
+        balance += amount;
+        cout<<"Deposit Successfull, New balance: "<<balance<<endl;
+    }
 };
 
 int main () {
