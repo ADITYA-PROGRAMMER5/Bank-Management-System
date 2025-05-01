@@ -6,7 +6,15 @@ int main () {
 
     do
     {
-       
+        cout << "\n--- Bank Management System ---\n\n";
+        cout << "1. Create New Account\n";
+        cout << "2. Deposit Amount\n";
+        cout << "3. Withdraw Amount\n";
+        cout << "4. Balance Enquiry\n";
+        cout << "5. Display All Accounts\n";
+        cout << "6. Exit\n";
+        cout<<"Enter your Choice: ";
+        cin>>choice;
     } while (choice != 6);
     
 return 0;
