@@ -15,6 +15,35 @@ int main () {
         cout << "6. Exit\n";
         cout<<"Enter your Choice: ";
         cin>>choice;
+
+        switch (choice)
+        {
+        case 1:
+            
+            break;
+
+        case 2:
+
+            break;
+
+        case 3:
+
+            break;
+
+        case 4:
+
+            break;
+
+        case 5:
+
+            break;
+
+        case 6:
+        
+            break;
+        
+        default:
+        }
     } while (choice != 6);
     
 return 0;
