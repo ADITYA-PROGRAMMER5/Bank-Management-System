@@ -1,5 +1,9 @@
 #include <iostream>
-using namespace std; 
+using namespace std;
+
+class Account {
+
+};
 
 int main () {
     int choice;
