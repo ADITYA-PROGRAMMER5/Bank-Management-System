@@ -84,7 +84,7 @@ int main () {
         switch (choice)
         {
         case 1:
-
+            createNewAccount();
             break;
 
         case 2:
