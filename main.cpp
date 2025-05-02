@@ -56,6 +56,16 @@ const int max_account = 100;
 Account ACC[max_account];
 int totalAccount = 0;
 
+void createNewAccount() {
+    if (totalAccount >= max_account)
+    {
+        cout<<"Cant create more Account. Max limit reached";
+        return;
+    }
+    ACC[totalAccount].createAccount();
+    totalAccount++;
+}
+
 int main () {
     int choice;
 
