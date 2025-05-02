@@ -52,6 +52,8 @@ class Account {
     }
 };
 
+const int max_account = 100;
+
 int main () {
     int choice;
 
@@ -70,7 +72,7 @@ int main () {
         switch (choice)
         {
         case 1:
-        
+
             break;
 
         case 2:
