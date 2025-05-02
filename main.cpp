@@ -2,52 +2,58 @@
 #include <string>
 using namespace std;
 
-class Account {
-    private:
+class Account
+{
+private:
     int accountNumber;
     string holderName;
     char accountType;
     double balance;
 
-    public:
-    void createAccount() {
-        cout<<"Enter Account Number: ";
-        cin>>accountNumber;
+public:
+    void createAccount()
+    {
+        cout << "Enter Account Number: ";
+        cin >> accountNumber;
         cin.ignore();
-        cout<<"Enter Account Holder Name: ";
+        cout << "Enter Account Holder Name: ";
         getline(cin, holderName);
-        cout<<"Enter Account Type ('S' = Saving, 'C' = Current): ";
-        cin>>accountType;
-        cout<<"Enter Holder Balance: ";
-        cin>>balance;
-        cout<<"\n\nNew Account Created Successfully\n\n";
+        cout << "Enter Account Type ('S' = Saving, 'C' = Current): ";
+        cin >> accountType;
+        cout << "Enter Holder Balance: ";
+        cin >> balance;
+        cout << "\n\nNew Account Created Successfully\n\n";
     }
 
-    void deposit(double amount) {
+    void deposit(double amount)
+    {
         balance += amount;
-        cout<<"Deposit Successfull, New balance: "<<balance<<endl;
+        cout << "Deposit Successfull, New balance: " << balance << endl;
     }
 
-    void showAccount() const {
-        cout<<"\nAccount Number : "<<accountNumber;
-        cout<<"\nAccount Holder Name : "<<holderName;
-        cout<<"\nAccount Type : "<<(accountType == 'S'? "Saving" : "Current");
-        cout<<"\nBaleance : "<<balance<<endl;
+    void showAccount() const
+    {
+        cout << "\nAccount Number : " << accountNumber;
+        cout << "\nAccount Holder Name : " << holderName;
+        cout << "\nAccount Type : " << (accountType == 'S' ? "Saving" : "Current");
+        cout << "\nBaleance : " << balance << endl;
     }
 
-    void withDraw(double amount) {
+    void withDraw(double amount)
+    {
         if (amount > balance)
         {
-            cout<<"Insufficient Balance.\n";
+            cout << "Insufficient Balance.\n";
         }
         else
         {
             balance -= amount;
-            cout<<"Withdram Successfull. Remaining balance : "<<balance <<endl;
+            cout << "Withdram Successfull. Remaining balance : " << balance << endl;
         }
     }
 
-    int getBalance() const {
+    int getBalance() const
+    {
         return accountNumber;
     }
 };
@@ -56,30 +62,33 @@ const int max_account = 100;
 Account ACC[max_account];
 int totalAccount = 0;
 
-void createNewAccount() {
+void createNewAccount()
+{
     if (totalAccount >= max_account)
     {
-        cout<<"Cant create more Account. Max limit reached";
+        cout << "Cant create more Account. Max limit reached";
         return;
     }
     ACC[totalAccount].createAccount();
     totalAccount++;
 };
 
-void displayAllAccount() {
+void displayAllAccount()
+{
     if (totalAccount == 0)
     {
-        cout<<"No Account to display";
+        cout << "No Account to display";
         return;
     }
     for (int i = 0; i < totalAccount; ++i)
     {
         ACC[i].showAccount();
-        cout<<"-----------------------------------\n";
+        cout << "-----------------------------------\n";
     }
 }
 
-int main () {
+int main()
+{
     int choice;
 
     do
@@ -91,8 +100,8 @@ int main () {
         cout << "4. Balance Enquiry\n";
         cout << "5. Display All Accounts\n";
         cout << "6. Exit\n";
-        cout<<"Enter your Choice (1-6): ";
-        cin>>choice;
+        cout << "Enter your Choice (1-6): ";
+        cin >> choice;
 
         switch (choice)
         {
@@ -101,7 +110,7 @@ int main () {
             break;
 
         case 2:
-
+            displayAllAccount();
             break;
 
         case 3:
@@ -117,13 +126,13 @@ int main () {
             break;
 
         case 6:
-            cout<<"Thank You for using Bank Managemnt System\n\n";
+            cout << "Thank You for using Bank Managemnt System\n\n";
             break;
-        
+
         default:
-            cout<<"Invalid Choice! PLease Try Again\n";
+            cout << "Invalid Choice! PLease Try Again\n";
         }
     } while (choice != 6);
-    
-return 0;
+
+    return 0;
 }
