@@ -64,6 +64,19 @@ void createNewAccount() {
     }
     ACC[totalAccount].createAccount();
     totalAccount++;
+};
+
+void displayAllAccount() {
+    if (totalAccount == 0)
+    {
+        cout<<"No Account to display";
+        return;
+    }
+    for (int i = 0; i < totalAccount; ++i)
+    {
+        ACC[i].showAccount();
+        cout<<"-----------------------------------\n";
+    }
 }
 
 int main () {
