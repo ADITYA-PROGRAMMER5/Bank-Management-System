@@ -54,6 +54,8 @@ class Account {
 
 const int max_account = 100;
 Account ACC[max_account];
+int totalAccount = 0;
+
 int main () {
     int choice;
 
