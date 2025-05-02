@@ -10,7 +10,7 @@ class Account {
     double balance;
 
     public:
-    void createNewAccount() {
+    void createAccount() {
         cout<<"Enter Account Number: ";
         cin>>accountNumber;
         cin.ignore();
@@ -53,7 +53,6 @@ class Account {
 };
 
 int main () {
-    Account acc;
     int choice;
 
     do
@@ -71,7 +70,7 @@ int main () {
         switch (choice)
         {
         case 1:
-            acc.createNewAccount();
+        
             break;
 
         case 2:
