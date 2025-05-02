@@ -53,7 +53,7 @@ class Account {
 };
 
 const int max_account = 100;
-
+Account ACC[max_account];
 int main () {
     int choice;
 
