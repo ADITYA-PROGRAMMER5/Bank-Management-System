@@ -110,7 +110,7 @@ int main()
             break;
 
         case 2:
-            displayAllAccount();
+            
             break;
 
         case 3:
@@ -122,7 +122,7 @@ int main()
             break;
 
         case 5:
-
+            displayAllAccount();
             break;
 
         case 6:
