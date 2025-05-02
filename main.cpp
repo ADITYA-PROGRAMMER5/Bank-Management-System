@@ -27,6 +27,13 @@ class Account {
         balance += amount;
         cout<<"Deposit Successfull, New balance: "<<balance<<endl;
     }
+
+    void showAccount() const {
+        cout<<"\nAccount Number : "<<accountNumber;
+        cout<<"\nAccount Holder Name : "<<holderName;
+        cout<<"\nAccount Type : "<<(accountType == 'S'? "Saving" : "Current");
+        cout<<"\nBaleance : "<<balance<<endl;
+    }
 };
 
 int main () {
