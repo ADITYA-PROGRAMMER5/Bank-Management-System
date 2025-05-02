@@ -46,6 +46,10 @@ class Account {
             cout<<"Withdram Successfull. Remaining balance : "<<balance <<endl;
         }
     }
+
+    int getBalance() const {
+        return accountNumber;
+    }
 };
 
 int main () {
