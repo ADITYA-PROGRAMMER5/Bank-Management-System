@@ -34,6 +34,18 @@ class Account {
         cout<<"\nAccount Type : "<<(accountType == 'S'? "Saving" : "Current");
         cout<<"\nBaleance : "<<balance<<endl;
     }
+
+    void withDraw(double amount) {
+        if (amount > balance)
+        {
+            cout<<"Insufficient Balance.\n";
+        }
+        else
+        {
+            balance -= amount;
+            cout<<"Withdram Successfull. Remaining balance : "<<balance <<endl;
+        }
+    }
 };
 
 int main () {
