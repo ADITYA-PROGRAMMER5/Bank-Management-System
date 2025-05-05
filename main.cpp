@@ -110,18 +110,6 @@ void depositAmount() {
     }
 }
 
-void balanceEnquiry() {
-    int accountNumber;
-    cout << "\nEnter Account Number: ";
-    cin >> accountNumber;
-    Account* ACC = findAccount(accountNumber);
-    if (ACC) {
-        ACC->showAccount();
-    } else {
-        cout << "Account not found.\n";
-    }
-}
-
 void withdrawAmount() {
     int accountNumber;
     double amount;
@@ -132,6 +120,18 @@ void withdrawAmount() {
         cout << "Enter Amount to Withdraw: ";
         cin >> amount;
         ACC->withDraw(amount);
+    } else {
+        cout << "Account not found.\n";
+    }
+}
+
+void balanceEnquiry() {
+    int accountNumber;
+    cout << "\nEnter Account Number: ";
+    cin >> accountNumber;
+    Account* ACC = findAccount(accountNumber);
+    if (ACC) {
+        ACC->showAccount();
     } else {
         cout << "Account not found.\n";
     }
