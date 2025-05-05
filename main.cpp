@@ -168,7 +168,7 @@ int main()
             break;
 
         case 4:
-            
+            balanceEnquiry();
             break;
 
         case 5:
