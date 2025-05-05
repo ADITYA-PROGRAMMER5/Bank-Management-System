@@ -152,7 +152,7 @@ int main()
             break;
 
         case 3:
-            
+            withdrawAmount();
             break;
 
         case 4:
