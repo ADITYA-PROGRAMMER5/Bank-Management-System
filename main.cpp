@@ -95,6 +95,21 @@ Account* findAccount(int accountNumber) {
     }
 }
 
+void depositAmount() {
+    int accountNumber;
+    double amount;
+    cout<<"Enter your account number : ";
+    cin>>accountNumber;
+    Account* ACC = findAccount(accountNumber);
+    if (ACC) {
+        cout << "Enter Amount to Deposit: ";
+        cin >> amount;
+        ACC->deposit(amount);
+    } else {
+        cout << "Account not found.\n";
+    }
+}
+
 int main()
 {
     int choice;
