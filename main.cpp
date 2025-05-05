@@ -133,7 +133,7 @@ int main()
             break;
 
         case 2:
-            
+            depositAmount();
             break;
 
         case 3:
