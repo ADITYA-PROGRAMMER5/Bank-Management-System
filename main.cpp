@@ -52,7 +52,7 @@ public:
         }
     }
 
-    int getBalance() const
+    int getAccountNumber () const
     {
         return accountNumber;
     }
