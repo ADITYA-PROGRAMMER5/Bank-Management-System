@@ -52,7 +52,7 @@ public:
         }
     }
 
-    int getAccountNumber () const
+    int getAccountNumber() const
     {
         return accountNumber;
     }
@@ -87,52 +87,67 @@ void displayAllAccount()
     }
 }
 
-Account* findAccount(int accountNumber) {
-    for (int i = 0; i < totalAccount; ++i) {
-        if (ACC[i].getAccountNumber() == accountNumber) {
+Account *findAccount(int accountNumber)
+{
+    for (int i = 0; i < totalAccount; ++i)
+    {
+        if (ACC[i].getAccountNumber() == accountNumber)
+        {
             return &ACC[i];
         }
     }
 }
 
-void depositAmount() {
+void depositAmount()
+{
     int accountNumber;
     double amount;
-    cout<<"Enter your account number : ";
-    cin>>accountNumber;
-    Account* ACC = findAccount(accountNumber);
-    if (ACC) {
+    cout << "Enter your account number : ";
+    cin >> accountNumber;
+    Account *ACC = findAccount(accountNumber);
+    if (ACC)
+    {
         cout << "Enter Amount to Deposit: ";
         cin >> amount;
         ACC->deposit(amount);
-    } else {
+    }
+    else
+    {
         cout << "Account not found.\n";
     }
 }
 
-void withdrawAmount() {
+void withdrawAmount()
+{
     int accountNumber;
     double amount;
-    cout<<"Enter your account number : ";
-    cin>>accountNumber;
-    Account* ACC = findAccount(accountNumber);
-    if (ACC) {
+    cout << "Enter your account number : ";
+    cin >> accountNumber;
+    Account *ACC = findAccount(accountNumber);
+    if (ACC)
+    {
         cout << "Enter Amount to Withdraw: ";
         cin >> amount;
         ACC->withDraw(amount);
-    } else {
+    }
+    else
+    {
         cout << "Account not found.\n";
     }
 }
 
-void balanceEnquiry() {
+void balanceEnquiry()
+{
     int accountNumber;
     cout << "\nEnter Account Number: ";
     cin >> accountNumber;
-    Account* ACC = findAccount(accountNumber);
-    if (ACC) {
+    Account *ACC = findAccount(accountNumber);
+    if (ACC)
+    {
         ACC->showAccount();
-    } else {
+    }
+    else
+    {
         cout << "Account not found.\n";
     }
 }
