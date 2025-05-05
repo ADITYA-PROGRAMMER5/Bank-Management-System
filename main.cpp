@@ -87,6 +87,14 @@ void displayAllAccount()
     }
 }
 
+Account* findAccount(int accountNumber) {
+    for (int i = 0; i < totalAccount; ++i) {
+        if (ACC[i].getAccountNumber() == accountNumber) {
+            return &ACC[i];
+        }
+    }
+}
+
 int main()
 {
     int choice;
