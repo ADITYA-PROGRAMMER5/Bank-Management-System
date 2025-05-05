@@ -110,6 +110,18 @@ void depositAmount() {
     }
 }
 
+void balanceEnquiry() {
+    int accountNumber;
+    cout << "\nEnter Account Number: ";
+    cin >> accountNumber;
+    Account* ACC = findAccount(accountNumber);
+    if (ACC) {
+        ACC->showAccount();
+    } else {
+        cout << "Account not found.\n";
+    }
+}
+
 void withdrawAmount() {
     int accountNumber;
     double amount;
@@ -156,7 +168,7 @@ int main()
             break;
 
         case 4:
-
+            
             break;
 
         case 5:
