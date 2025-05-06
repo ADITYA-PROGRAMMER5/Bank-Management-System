@@ -19,3 +19,7 @@ The Bank Management System is a terminal-based application written in C++ that s
 To compile the program:
     g++ -o bank_management bank_management.cpp
 
+## Running
+To run the compiled program:
+    ./bank_management
+
