@@ -35,3 +35,9 @@ Upon execution, the following options are displayed:
     5. Display All Accounts
     6. Exit
 
+## Notes
+- The application uses a static array of 100 accounts (limit).
+- Data is not persistent; exiting the program clears all stored information.
+- Account is searched by Account Number only.
+- All operations are performed in real time via standard input/output.
+
