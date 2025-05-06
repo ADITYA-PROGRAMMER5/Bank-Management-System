@@ -47,3 +47,10 @@ Upon execution, the following options are displayed:
 - No advanced error handling
 - No concurrency or security layer
 
+## Possible Enhancements
+- File or database support for persistent storage
+- Add validations and input error handling
+- Implement unique account number enforcement
+- Add transaction logs and timestamps
+- Provide a GUI or web interface
+
