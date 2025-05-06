@@ -23,3 +23,15 @@ To compile the program:
 To run the compiled program:
     ./bank_management
 
+## Menu Options
+Upon execution, the following options are displayed:
+
+    --- Bank Management System ---
+    
+    1. Create New Account
+    2. Deposit Amount
+    3. Withdraw Amount
+    4. Balance Enquiry
+    5. Display All Accounts
+    6. Exit
+
