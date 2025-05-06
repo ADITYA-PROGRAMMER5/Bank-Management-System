@@ -10,7 +10,12 @@ The Bank Management System is a terminal-based application written in C++ that s
 - Balance Enquiry
 - Display All Accounts
 - Menu-driven interface
+
 ## Requirements
 - g++ or any C++ compiler
 - Terminal/command-line environment
+
+## Compilation
+To compile the program:
+    g++ -o bank_management bank_management.cpp
 
