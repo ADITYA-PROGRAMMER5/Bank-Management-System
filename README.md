@@ -41,3 +41,9 @@ Upon execution, the following options are displayed:
 - Account is searched by Account Number only.
 - All operations are performed in real time via standard input/output.
 
+## Limitations
+- No persistent storage (no files or databases)
+- No validation for duplicate account numbers
+- No advanced error handling
+- No concurrency or security layer
+
