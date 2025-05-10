@@ -1,58 +1,61 @@
-# Bank Management System (C++)
+# 🏦 Bank Management System (C++)
 
-## Overview
+## 📄 Overview
 The Bank Management System is a terminal-based application written in C++ that simulates basic operations of a bank. It allows creation of accounts, deposits, withdrawals, balance inquiries, and displaying all stored accounts.
 
-## Features
-- Create New Account (Saving or Current)
-- Deposit Funds
-- Withdraw Funds
-- Balance Enquiry
-- Display All Accounts
-- Menu-driven interface
+## ✨ Features
+- 🆕 Create New Account (Saving or Current)
+- 💰 Deposit Funds
+- 💸 Withdraw Funds
+- 📊 Balance Enquiry
+- 📋 Display All Accounts
+- 📑 Menu-driven interface
 
-## Requirements
-- g++ or any C++ compiler
-- Terminal/command-line environment
+## 🧰 Requirements
+- 🛠️ g++ or any C++ compiler
+- 💻 Terminal/command-line environment
 
-## Compilation
+## 🧾 Compilation
 To compile the program:
+    ```bash
     g++ -o bank_management bank_management.cpp
+    ```
 
-## Running
+## ▶️ Running
 To run the compiled program:
     ./bank_management
 
-## Menu Options
+## 🗂️ Menu Options
 Upon execution, the following options are displayed:
-
+```bash
     --- Bank Management System ---
-    
-    1. Create New Account
-    2. Deposit Amount
-    3. Withdraw Amount
-    4. Balance Enquiry
-    5. Display All Accounts
-    6. Exit
 
-## Notes
-- The application uses a static array of 100 accounts (limit).
-- Data is not persistent; exiting the program clears all stored information.
-- Account is searched by Account Number only.
-- All operations are performed in real time via standard input/output.
+1. 🆕 Create New Account  
+2. 💰 Deposit Amount  
+3. 💸 Withdraw Amount  
+4. 📊 Balance Enquiry  
+5. 📋 Display All Accounts  
+6. ❌ Exit  
+```
 
-## Limitations
-- No persistent storage (no files or databases)
-- No validation for duplicate account numbers
-- No advanced error handling
-- No concurrency or security layer
+## 📝 Notes
+- 📌 The application uses a static array of 100 accounts (limit).
+- 🧹 Data is not persistent; exiting the program clears all stored information.
+- 🔍 Account is searched by Account Number only.
+- ⏱️ All operations are performed in real time via standard input/output.
 
-## Possible Enhancements
-- File or database support for persistent storage
-- Add validations and input error handling
-- Implement unique account number enforcement
-- Add transaction logs and timestamps
-- Provide a GUI or web interface
+## ⚠️ Limitations
+- 📂 No persistent storage (no files or databases)
+- 🔁 No validation for duplicate account numbers
+- ❗ No advanced error handling
+- 🔐 No concurrency or security layer
 
-## Program By
+## 🚀 Possible Enhancements
+- 🗃️ File or database support for persistent storage
+- ✅ Add validations and input error handling
+- 🔢 Implement unique account number enforcement
+- 📜 Add transaction logs and timestamps
+- 🖥️ Provide a GUI or web interface
+
+## 👨‍💻 Program By
 **[ADITYA JADHAV](https://github.com/ADITYA-PROGRAMMER5)**
